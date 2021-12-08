@@ -1,9 +1,9 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var multiplicar = input.split('\n');
 
-var A = parseFloat(multiplicar.shift()) * 3.5
-var B = parseFloat(multiplicar.shift()) * 7.5
+var A = parseFloat(multiplicar.shift()) 
+var B = parseFloat(multiplicar.shift()) 
 
-var MEDIA = (A + B) / 10
+var MEDIA = (A * 3.5 + B * 7.5) / 11.0
 
-console.log("MEDIA = " + MEDIA)
+console.log("MEDIA = " + MEDIA.toFixed(5))
