@@ -1,6 +1,8 @@
 var input = require('fs').readFileSync('stdin', 'utf8');
 var valor = parseInt(input.split('\n'));
 
+console.log(valor)
+
 var quantidadeDeNotas = parseInt(valor/100)
 console.log(`${quantidadeDeNotas} nota(s) de R$ 100,00`)
 valor = valor % 100
